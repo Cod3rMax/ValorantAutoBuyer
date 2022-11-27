@@ -1,0 +1,9 @@
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\ValorantAutoBuyer.exe
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\ValorantAutoBuyer.pdb
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.exe
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.pdb
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\WindowsInput.dll
+C:\Users\User\Desktop\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.CopyComplete
