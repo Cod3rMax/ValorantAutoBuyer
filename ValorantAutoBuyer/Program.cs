@@ -31,7 +31,7 @@ namespace ValorantAutoBuyer
                 }
 
                 // Buy Spectre with LightShield
-                if (Helper.KeyboardState.GetAsyncKeyState(Keys.F2) < 0)
+                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F2) < 0)
                 {
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Purchase.Spectre.PurchaseSpectre();
@@ -40,8 +40,19 @@ namespace ValorantAutoBuyer
                     Thread.Sleep(20);
                 }
                 
-                // Buy vandal with full
+                
+                // Buy bulldog with light shields
                 else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F3) < 0)
+                {
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Purchase.Bulldog.PurchaseBulldog();
+                    Purchase.Shields.PurchaseLightShields();
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Thread.Sleep(20);
+                }
+                
+                // Buy vandal with full
+                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F5) < 0)
                 {
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Purchase.Vandal.PurchaseVandal();
@@ -52,7 +63,7 @@ namespace ValorantAutoBuyer
                 }
                 
                 // Buy Phantom with full
-                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F4) < 0)
+                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F6) < 0)
                 {
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Purchase.Phantom.PurchasePhantom();
