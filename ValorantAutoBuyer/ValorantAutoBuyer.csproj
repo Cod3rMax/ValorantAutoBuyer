@@ -43,18 +43,21 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Functions\CursorInteraction.cs" />
         <Compile Include="Globals\Const.cs" />
         <Compile Include="Helper\CursorPosition.cs" />
         <Compile Include="Helper\KeyboardState.cs" />
         <Compile Include="Helper\MouseMovment.cs" />
+        <Compile Include="Helper\ValorantWindow.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Purchase\Abilities.cs" />
+        <Compile Include="Purchase\Phantom.cs" />
+        <Compile Include="Purchase\Shields.cs" />
+        <Compile Include="Purchase\Vandal.cs" />
     </ItemGroup>
     <ItemGroup>
       <None Include="packages.config" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Purchase" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
