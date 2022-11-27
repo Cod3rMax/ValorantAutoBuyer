@@ -52,6 +52,7 @@
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Purchase\Abilities.cs" />
+        <Compile Include="Purchase\Ghost.cs" />
         <Compile Include="Purchase\Phantom.cs" />
         <Compile Include="Purchase\Shields.cs" />
         <Compile Include="Purchase\Vandal.cs" />

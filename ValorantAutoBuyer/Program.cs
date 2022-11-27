@@ -23,8 +23,8 @@ namespace ValorantAutoBuyer
                 if (Helper.KeyboardState.GetAsyncKeyState(Keys.NumPad1) < 0)
                 {
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
-                    Purchase.Phantom.PurchasePhantom();
-                    Purchase.Shields.PurchaseShields();
+                    Purchase.Ghost.PurchaseGhost();
+                    Purchase.Shields.PurchaseHeavyShields();
                     Purchase.Abilities.PurchaseAbilities();
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Thread.Sleep(20);
