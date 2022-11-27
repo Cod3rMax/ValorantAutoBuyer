@@ -15,5 +15,15 @@ namespace ValorantAutoBuyer.Purchase
         }
 
 
+        public static void PurchaseLightShields()
+        {
+            Thread.Sleep(30);
+            var _width = (Helper.ValorantWindow._rect.Right + Helper.ValorantWindow._rect.Left) / 2;
+            var _height = (Helper.ValorantWindow._rect.Buttom + Helper.ValorantWindow._rect.Top) / 2;
+            CursorPosition.SetCursorPos(_width + (_width)/2, _height /2);
+            Functions.CursorInteraction.CursorClick();
+        }
+        
+
     }
 }

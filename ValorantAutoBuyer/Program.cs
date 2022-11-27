@@ -20,15 +20,41 @@ namespace ValorantAutoBuyer
             
             while (true)
             {
-                if (Helper.KeyboardState.GetAsyncKeyState(Keys.NumPad1) < 0)
+                
+                // For the first round (I need abilities only)
+                if (Helper.KeyboardState.GetAsyncKeyState(Keys.F1) < 0)
                 {
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
-                    Purchase.Ghost.PurchaseGhost();
+                    Purchase.Abilities.PurchaseAbilities();
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Thread.Sleep(20);
+                }
+
+                
+                // Buy vandal with full
+                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F3) < 0)
+                {
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Purchase.Vandal.PurchaseVandal();
                     Purchase.Shields.PurchaseHeavyShields();
                     Purchase.Abilities.PurchaseAbilities();
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Thread.Sleep(20);
                 }
+                
+                // Buy Phantom with full
+                else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F4) < 0)
+                {
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Purchase.Phantom.PurchasePhantom();
+                    Purchase.Shields.PurchaseHeavyShields();
+                    Purchase.Abilities.PurchaseAbilities();
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Thread.Sleep(20);
+                }
+                
+                
+                
             }
 
 
