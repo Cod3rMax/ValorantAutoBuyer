@@ -30,6 +30,15 @@ namespace ValorantAutoBuyer
                     Thread.Sleep(20);
                 }
 
+                // Buy Spectre with LightShield
+                if (Helper.KeyboardState.GetAsyncKeyState(Keys.F2) < 0)
+                {
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Purchase.Spectre.PurchaseSpectre();
+                    Purchase.Shields.PurchaseLightShields();
+                    new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
+                    Thread.Sleep(20);
+                }
                 
                 // Buy vandal with full
                 else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F3) < 0)

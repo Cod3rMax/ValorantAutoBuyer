@@ -55,6 +55,7 @@
         <Compile Include="Purchase\Ghost.cs" />
         <Compile Include="Purchase\Phantom.cs" />
         <Compile Include="Purchase\Shields.cs" />
+        <Compile Include="Purchase\Spectre.cs" />
         <Compile Include="Purchase\Vandal.cs" />
     </ItemGroup>
     <ItemGroup>
