@@ -36,6 +36,7 @@ namespace ValorantAutoBuyer
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Purchase.Spectre.PurchaseSpectre();
                     Purchase.Shields.PurchaseLightShields();
+                    Purchase.Abilities.PurchaseAbilities();
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Thread.Sleep(20);
                 }
@@ -47,6 +48,7 @@ namespace ValorantAutoBuyer
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Purchase.Bulldog.PurchaseBulldog();
                     Purchase.Shields.PurchaseLightShields();
+                    Purchase.Abilities.PurchaseAbilities();
                     new InputSimulator().Keyboard.KeyPress(VirtualKeyCode.VK_B);
                     Thread.Sleep(20);
                 }
