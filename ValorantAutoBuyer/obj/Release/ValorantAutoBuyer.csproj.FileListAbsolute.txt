@@ -1,0 +1,11 @@
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Release\ValorantAutoBuyer.exe
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Release\ValorantAutoBuyer.pdb
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Release\System.Diagnostics.DiagnosticSource.xml
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.AssemblyReference.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.SuggestedBindingRedirects.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.CoreCompileInputs.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.Fody.CopyLocal.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.Fody.RuntimeCopyLocal.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.CopyComplete
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.exe
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.pdb
