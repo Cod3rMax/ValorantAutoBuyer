@@ -50,6 +50,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Display\Header.cs" />
+        <Compile Include="Functions\CheckUserInput.cs" />
         <Compile Include="Functions\CursorInteraction.cs" />
         <Compile Include="Functions\KeyboardInteraction.cs" />
         <Compile Include="Globals\Const.cs" />
