@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace ValorantAutoBuyer.Functions;
@@ -8,6 +9,12 @@ public class CheckUserInput
     public static void StartAutoBuyer()
     {
         while (true)
+        {
+
+            // Keep getting valorant window sizes everytime.
+            var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
+            Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
+
             // For the first round (I need abilities only)
             if (Helper.KeyboardState.GetAsyncKeyState(Keys.F1) < 0)
             {
@@ -60,5 +67,6 @@ public class CheckUserInput
                 KeyboardInteraction.PressButtonB();
                 Thread.Sleep(20);
             }
+        }
     }
 }

@@ -9,13 +9,13 @@ namespace ValorantAutoBuyer.Helper
         public static extern IntPtr FindWindow(IntPtr lpClassName, string lpWindowName);
         
         [DllImport("user32.dll", SetLastError=true)]
-        public static extern bool GetWindowRect(IntPtr hwnd, out RECT lpRect);
+        public static extern bool GetWindowRect(IntPtr hwnd, out Rect lpRect);
         
         [StructLayout(LayoutKind.Sequential)]
-        public struct RECT
+        public struct Rect
         {
             public int Left, Top, Right, Buttom;
         }
-        public static RECT _rect;
+        public static Rect _rect;
     }
 }
