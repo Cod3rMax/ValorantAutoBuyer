@@ -75,6 +75,11 @@ namespace ValorantAutoBuyer.Display
             Console.Write("[F6] => ", Color.GreenYellow);
             Console.Write("Purchase Phantom, Heavy Shield and All Abilities.", Color.BurlyWood);
             Console.WriteLine();
+            
+            Console.Write("[F9] => ", Color.GreenYellow);
+            Console.Write("Toxic Brim, Purchase All Abilities, HeavyShield, Judge, Ghost.", Color.BurlyWood);
+            Console.WriteLine();
+            
             Console.WriteLine();
             Console.Write("[*] => Choose your purchase in game:", Color.BurlyWood);
         }

@@ -14,7 +14,7 @@ public class CheckUserInput
             // Keep getting valorant window sizes everytime.
             var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
-
+            
             // For the first round (I need abilities only)
             if (Helper.KeyboardState.GetAsyncKeyState(Keys.F1) < 0)
             {
@@ -62,6 +62,19 @@ public class CheckUserInput
             {
                 KeyboardInteraction.PressButtonB();
                 Purchase.Phantom.PurchasePhantom();
+                Purchase.Shields.PurchaseHeavyShields();
+                Purchase.Abilities.PurchaseAbilities();
+                KeyboardInteraction.PressButtonB();
+                Thread.Sleep(20);
+            }
+            
+            
+            // Buy Phantom with full
+            else if (Helper.KeyboardState.GetAsyncKeyState(Keys.F9) < 0)
+            {
+                KeyboardInteraction.PressButtonB();
+                Purchase.Judge.PurchaseJudge();
+                Purchase.Ghost.PurchaseGhost();
                 Purchase.Shields.PurchaseHeavyShields();
                 Purchase.Abilities.PurchaseAbilities();
                 KeyboardInteraction.PressButtonB();
