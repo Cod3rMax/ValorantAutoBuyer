@@ -10,19 +10,11 @@ namespace ValorantAutoBuyer
 {
     internal class Program
     {
-        
-
-
         public static void Main(string[] args)
         {
             Display.Header.ValorantAutoBuyerHeader();
             Functions.CheckUserInput.StartAutoBuyer();
         }
-        
-        
-        
-
-        
         
     }
 }

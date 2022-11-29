@@ -12,6 +12,7 @@ namespace ValorantAutoBuyer.Purchase
             var _height = (Helper.ValorantWindow._rect.Buttom + Helper.ValorantWindow._rect.Top) / 2;
             for (int i = 0; i < 4; i++)
             {
+                
                 CursorPosition.SetCursorPos(_width - (_width) / 2 - 200 + 277 * i + 277 , _height + (_height)/2 + 50);
                 Functions.CursorInteraction.CursorClick();
                 for (int j = 0; j < 4; j++)
