@@ -12,8 +12,8 @@ namespace ValorantAutoBuyer
     {
         public static void Main(string[] args)
         {
-            Functions.CheckValorantGame.CheckGameOpenedThread.Start();
+             Functions.CheckValorantGame.CheckGameOpenedThread.Start();
         }
-        
+
     }
 }

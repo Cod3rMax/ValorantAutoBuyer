@@ -9,3 +9,5 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.F
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.CopyComplete
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.exe
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.pdb
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\Interop.AutoItX3Lib.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Release\ValorantAutoBuyer.csproj.ResolveComReference.cache
