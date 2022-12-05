@@ -18,3 +18,5 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.pdb
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.Fody.CopyLocal.cache
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.Fody.RuntimeCopyLocal.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\Interop.AutoItX3Lib.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.ResolveComReference.cache

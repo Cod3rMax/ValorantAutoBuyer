@@ -9,6 +9,7 @@ public class CheckUserInput
 {
     public static void StartAutoBuyer()
     {
+        Helper.ShowDiscordToUser.DisplayDiscordServer();
         while (true)
         {
 
