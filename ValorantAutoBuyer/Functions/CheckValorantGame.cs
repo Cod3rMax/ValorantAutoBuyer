@@ -29,6 +29,7 @@ public class CheckValorantGame
                 Console.Clear();
                 Display.Header.ValorantAutoBuyerHeader();
                 Functions.CheckUserInput.StartAutoBuyer();
+                break;
             }
             Thread.Sleep(1500);
         }
