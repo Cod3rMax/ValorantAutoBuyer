@@ -118,6 +118,10 @@ public class LockAgentBot
                         LockAgent.Breach.LockBreach();
                         break;
 
+                    case var _ when Globals.Config.AgentToLock == "brimstone":
+                        LockAgent.Brimstone.LockBrimstone();
+                        break;
+
                     default:
                         break;
                 }

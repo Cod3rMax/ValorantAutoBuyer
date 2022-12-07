@@ -169,6 +169,7 @@
     <Compile Include="Helper\ValorantWindow.cs" />
     <Compile Include="LockAgent\Astra.cs" />
     <Compile Include="LockAgent\Breach.cs" />
+    <Compile Include="LockAgent\Brimstone.cs" />
     <Compile Include="LockAgent\LockInButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
