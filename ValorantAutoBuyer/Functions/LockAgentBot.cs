@@ -114,6 +114,10 @@ public class LockAgentBot
                         LockAgent.Astra.LockAstra();
                         break;
 
+                    case var _ when Globals.Config.AgentToLock == "breach":
+                        LockAgent.Breach.LockBreach();
+                        break;
+
                     default:
                         break;
                 }

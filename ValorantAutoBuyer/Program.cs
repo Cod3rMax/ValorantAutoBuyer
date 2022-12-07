@@ -16,16 +16,6 @@ namespace ValorantAutoBuyer
         {
 
 
-            // Breach position
-
-            //var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
-            //Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
-            //int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
-            //int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
-            //Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5), height + height - (height / 4) - 30);
-
-
-
             //Brimstone position
 
             //var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
