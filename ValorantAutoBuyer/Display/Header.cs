@@ -6,7 +6,7 @@ namespace ValorantAutoBuyer.Display
 {
     public class Header
     {
-        private static readonly string Line1 = " █████╗ ██╗   ██╗████████╗ ██████╗ ██████╗ ██╗   ██╗██╗   ██╗███████╗██████╗";
+        private static readonly string Line1 = "  █████╗ ██╗   ██╗████████╗ ██████╗ ██████╗ ██╗   ██╗██╗   ██╗███████╗██████╗";
         private static readonly string Line2 = " ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔══██╗██║   ██║╚██╗ ██╔╝██╔════╝██╔══██╗";
         private static readonly string Line3 = " ███████║██║   ██║   ██║   ██║   ██║██████╔╝██║   ██║ ╚████╔╝ █████╗  ██████╔╝";
         private static readonly string Line4 = " ██╔══██║██║   ██║   ██║   ██║   ██║██╔══██╗██║   ██║  ╚██╔╝  ██╔══╝  ██╔══██╗";
@@ -56,7 +56,12 @@ namespace ValorantAutoBuyer.Display
             Console.WriteLine(Line8, Color.Aqua);
 
             Console.WriteLine();
+        }
 
+
+
+        public static void ValorantAutoBuyerOptions()
+        {
             Console.Write("[F1] => ", Color.GreenYellow);
             Console.Write("Purchase All Abilities only.", Color.BurlyWood);
             Console.WriteLine();
@@ -83,5 +88,7 @@ namespace ValorantAutoBuyer.Display
             Console.WriteLine();
             Console.Write("[*] => Choose your purchase in game:", Color.BurlyWood);
         }
+        
+        
     }
 }

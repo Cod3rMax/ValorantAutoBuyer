@@ -20,3 +20,7 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.Fod
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.Fody.RuntimeCopyLocal.cache
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\Interop.AutoItX3Lib.dll
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\obj\Debug\ValorantAutoBuyer.csproj.ResolveComReference.cache
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\Microsoft.Win32.Registry.xml
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\Microsoft.Win32.Registry.AccessControl.xml
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.Security.AccessControl.xml
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.Security.Principal.Windows.xml

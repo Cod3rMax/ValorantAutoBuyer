@@ -7,15 +7,25 @@ namespace ValorantAutoBuyer.Functions;
 
 public class CheckUserInput
 {
+    
+    
     public static void StartAutoBuyer()
     {
         Helper.ShowDiscordToUser.DisplayDiscordServer();
+
+        var threadCounter = 0;
         while (true)
         {
-
             // Keep getting valorant window sizes everytime.
             var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
+
+            
+            if (Globals.Config.AutoLockAgent && threadCounter == 0)
+            {
+                new Thread(() => Functions.LockAgentBot.StartLockAgentProcess()) { IsBackground = true }.Start();
+                threadCounter += 1;
+            }
             
             // For the first round (I need abilities only)
             if (Helper.KeyboardState.GetAsyncKeyState(Keys.F1) < 0)
