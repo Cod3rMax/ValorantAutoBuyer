@@ -20,7 +20,6 @@ public class CheckUserInput
             var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
 
-            
             if (Globals.Config.AutoLockAgent && threadCounter == 0)
             {
                 new Thread(() => Functions.LockAgentBot.StartLockAgentProcess()) { IsBackground = true }.Start();

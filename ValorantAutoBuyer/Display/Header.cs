@@ -14,46 +14,49 @@ namespace ValorantAutoBuyer.Display
         private static readonly string Line6 = " ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝╚═╝  ╚═╝";
         private static readonly string Line7 = "~ Made by Cod3rMax ~";
         private static readonly string Line8 = @"{ Discord: https://discord.gg/Dxh3yY3TqA }";
+        
         public static void ValorantAutoBuyerHeader()
         {
+
+            string AutoLockAgentShow = Globals.Config.AutoLockAgent == true ? "ON" : "OFF";
+            string Line9 = "Auto Lock Agent: [ " + AutoLockAgentShow + " ]";
+
+
             Console.WindowWidth = 130;
             Console.WindowHeight = 35;
 
             Console.WriteLine();
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line1.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line1.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line1, Color.Red);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line2.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line2.Length) / 2.0), Console.CursorTop); 
             Console.WriteLine(Line2, Color.Red);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line3.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line3.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line3, Color.Red);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line4.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line4.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line4, Color.Red);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line5.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line5.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line5, Color.Red);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line6.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line6.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line6, Color.Red);
 
             Console.WriteLine();
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line7.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line7.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line7, Color.GreenYellow);
 
-            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line8.Length) / 2.0),
-                Console.CursorTop);
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line8.Length) / 2.0), Console.CursorTop);
             Console.WriteLine(Line8, Color.Aqua);
+
+            Console.WriteLine();
+
+            Console.SetCursorPosition((int)Math.Round((Console.WindowWidth - Line9.Length) / 2.0), Console.CursorTop);
+            Console.WriteLine(Line9, Color.BurlyWood);
 
             Console.WriteLine();
         }

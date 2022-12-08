@@ -33,9 +33,10 @@ namespace ValorantAutoBuyer.LockAgent
             Thread.Sleep(10);
             Functions.CursorInteraction.CursorClick();
 
-
-
             speaker.Speak("Astra has been locked");
+
+            LockAgent.ClearScreen.AgentLockedClear();
+
         }
 
 
