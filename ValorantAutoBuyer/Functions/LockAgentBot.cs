@@ -55,6 +55,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "chamber")
+                        {
+                            Globals.Config.AgentToLock = "chamber";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -120,6 +129,10 @@ public class LockAgentBot
 
                     case var _ when Globals.Config.AgentToLock == "brimstone":
                         LockAgent.Brimstone.LockBrimstone();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "chamber":
+                        LockAgent.Chamber.LockChamber();
                         break;
 
                     default:
