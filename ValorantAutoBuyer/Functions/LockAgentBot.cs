@@ -118,6 +118,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "neon")
+                        {
+                            Globals.Config.AgentToLock = "neon";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -211,6 +220,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "killjoy":
                         LockAgent.Killjoy.LockKilljoy();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "neon":
+                        LockAgent.Neon.LockNeon();
                         break;
                     
                     

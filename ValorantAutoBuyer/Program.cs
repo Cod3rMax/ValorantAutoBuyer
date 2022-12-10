@@ -15,7 +15,74 @@ namespace ValorantAutoBuyer
         public static void Main(string[] args)
         {
             
-            Functions.CheckValorantGame.CheckGameOpenedThread.Start();
+            var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
+            Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
+            
+
+            // Neon
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 9), height + height - (height / 8));
+            
+            
+            // Omen
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5), height + height - (height / 8));
+            
+            
+            // Phoenix
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 6) + (width / 9), height + height - (height / 8));
+            
+            
+            
+            // Raze
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 4) + (width / 8), height + height - (height / 8));
+            
+            
+            // Reyna
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5) + (width / 4), height + height - (height / 8));
+            
+            
+            
+            // Sage
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5) + (width / 3), height + height - (height / 8));
+            
+            
+            // Skye
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 3) + (width / 5) + (width / 12), height + height - (height / 8));
+            
+            
+            // Sova
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 3) + (width / 3) + (width / 20), height + height - (height / 8));
+
+            // Viper
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 3) + (width / 3) + (width / 7), height + height - (height / 8));
+            
+            
+
+            // Yoru
+            // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
+            // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
+            // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 3) + (width / 2) + (width / 18), height + height - (height / 8));
+            
+            
+
+            // Functions.CheckValorantGame.CheckGameOpenedThread.Start();
             
         }
 
