@@ -181,6 +181,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "sova")
+                        {
+                            Globals.Config.AgentToLock = "sova";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -302,6 +311,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "skye":
                         LockAgent.Skye.LockSkye();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "sova":
+                        LockAgent.Sova.LockSova();
                         break;
                     
                     
