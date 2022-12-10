@@ -177,6 +177,7 @@
     <Compile Include="LockAgent\Harbor.cs" />
     <Compile Include="LockAgent\Jett.cs" />
     <Compile Include="LockAgent\Kayo.cs" />
+    <Compile Include="LockAgent\Killjoy.cs" />
     <Compile Include="LockAgent\LockInButton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

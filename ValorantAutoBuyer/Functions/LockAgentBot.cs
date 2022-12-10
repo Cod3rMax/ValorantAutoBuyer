@@ -109,6 +109,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "killjoy")
+                        {
+                            Globals.Config.AgentToLock = "killjoy";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -198,6 +207,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "kayo":
                         LockAgent.Kayo.LockKayo();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "killjoy":
+                        LockAgent.Killjoy.LockKilljoy();
                         break;
                     
                     
