@@ -91,6 +91,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "jett")
+                        {
+                            Globals.Config.AgentToLock = "jett";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         
                         else
                         {
@@ -173,6 +182,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "harbor":
                         LockAgent.Harbor.LockHarbor();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "jett":
+                        LockAgent.Jett.LockJett();
                         break;
                         
                     default:
