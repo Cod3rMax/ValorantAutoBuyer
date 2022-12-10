@@ -63,6 +63,16 @@ public class LockAgentBot
                             Globals.Config.AgentLockingProcessON = false;
                             Console.Clear();
                         }
+                    
+                        else if (UserAgentToLock.ToString().ToLower() == "cypher")
+                        {
+                            Globals.Config.AgentToLock = "cypher";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         
                         else
                         {
@@ -134,7 +144,11 @@ public class LockAgentBot
                     case var _ when Globals.Config.AgentToLock == "chamber":
                         LockAgent.Chamber.LockChamber();
                         break;
-
+                        
+                    case var _ when Globals.Config.AgentToLock == "cypher":
+                        LockAgent.Cypher.LockCypher();
+                        break;
+                        
                     default:
                         break;
                 }

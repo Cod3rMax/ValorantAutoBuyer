@@ -16,15 +16,7 @@ namespace ValorantAutoBuyer
         {
             
 
-
-            // Cypher
-                // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
-                // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
-                // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 4) + (width / 5), height + height - (height / 4) - 30);
-            
-                
-                
-                // fade
+            // fade
                 // int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
                 // int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
                 // Helper.CursorPosition.SetCursorPos((width / 2) + (width / 4) + (width / 3 - 30), height + height - (height / 4) - 30);
