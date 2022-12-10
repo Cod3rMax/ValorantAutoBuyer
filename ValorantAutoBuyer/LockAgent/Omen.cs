@@ -26,7 +26,7 @@ public class Omen
         Thread.Sleep(10);
         Functions.CursorInteraction.CursorClick();
 
-        speaker.Speak("Neon has been locked");
+        speaker.Speak("Omen has been locked");
 
         LockAgent.ClearScreen.AgentLockedClear();
 
