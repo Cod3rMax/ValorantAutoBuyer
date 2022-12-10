@@ -73,6 +73,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "fade")
+                        {
+                            Globals.Config.AgentToLock = "fade";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         
                         else
                         {
@@ -147,6 +156,10 @@ public class LockAgentBot
                         
                     case var _ when Globals.Config.AgentToLock == "cypher":
                         LockAgent.Cypher.LockCypher();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "fade":
+                        LockAgent.Fade.LockFade();
                         break;
                         
                     default:
