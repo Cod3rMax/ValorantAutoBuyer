@@ -182,6 +182,7 @@
     <Compile Include="LockAgent\Neon.cs" />
     <Compile Include="LockAgent\Omen.cs" />
     <Compile Include="LockAgent\Phoenix.cs" />
+    <Compile Include="LockAgent\Raze.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase\Abilities.cs" />
