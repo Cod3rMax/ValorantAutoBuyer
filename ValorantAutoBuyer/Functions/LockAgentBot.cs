@@ -82,6 +82,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "harbor")
+                        {
+                            Globals.Config.AgentToLock = "harbor";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         
                         else
                         {
@@ -160,6 +169,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "fade":
                         LockAgent.Fade.LockFade();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "harbor":
+                        LockAgent.Harbor.LockHarbor();
                         break;
                         
                     default:
