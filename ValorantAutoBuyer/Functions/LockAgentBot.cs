@@ -199,6 +199,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "yoru")
+                        {
+                            Globals.Config.AgentToLock = "yoru";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -328,6 +337,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "viper":
                         LockAgent.Viper.LockViper();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "yoru":
+                        LockAgent.Yoru.LockYoru();
                         break;
                     
                     
