@@ -154,6 +154,15 @@ public class LockAgentBot
                             Console.Clear();
                         }
                         
+                        else if (UserAgentToLock.ToString().ToLower() == "reyna")
+                        {
+                            Globals.Config.AgentToLock = "reyna";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
+                        
                         else
                         {
                             Console.WriteLine("[x] => Agent doesn't exists! ", Color.Red);
@@ -263,6 +272,10 @@ public class LockAgentBot
                     
                     case var _ when Globals.Config.AgentToLock == "raze":
                         LockAgent.Raze.LockRaze();
+                        break;
+                    
+                    case var _ when Globals.Config.AgentToLock == "reyna":
+                        LockAgent.Reyna.LockReyna();
                         break;
                     
                     
