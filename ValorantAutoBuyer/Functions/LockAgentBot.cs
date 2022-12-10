@@ -99,7 +99,15 @@ public class LockAgentBot
                             Globals.Config.AgentLockingProcessON = false;
                             Console.Clear();
                         }
-                        
+
+                        else if (UserAgentToLock.ToString().ToLower() == "kayo")
+                        {
+                            Globals.Config.AgentToLock = "kayo";
+                            Globals.Config.CorrectUserAgentEntered = true;
+                            Config.AutoLockAgent = true;
+                            Globals.Config.AgentLockingProcessON = false;
+                            Console.Clear();
+                        }
                         
                         else
                         {
@@ -187,7 +195,12 @@ public class LockAgentBot
                     case var _ when Globals.Config.AgentToLock == "jett":
                         LockAgent.Jett.LockJett();
                         break;
-                        
+                    
+                    case var _ when Globals.Config.AgentToLock == "kayo":
+                        LockAgent.Kayo.LockKayo();
+                        break;
+                    
+                    
                     default:
                         break;
                 }
