@@ -187,6 +187,7 @@
     <Compile Include="LockAgent\Sage.cs" />
     <Compile Include="LockAgent\Skye.cs" />
     <Compile Include="LockAgent\Sova.cs" />
+    <Compile Include="LockAgent\Viper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Purchase\Abilities.cs" />
