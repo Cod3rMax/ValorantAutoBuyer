@@ -3,9 +3,9 @@ using System.Threading;
 
 namespace ValorantAutoBuyer.LockAgent;
 
-public class Reyna
+public class Sage
 {
-    public static void LockReyna()
+    public static void LockSage()
     {
         SpeechSynthesizer speaker = new SpeechSynthesizer();
         speaker.Volume = 100;
@@ -15,7 +15,7 @@ public class Reyna
 
         int width = (Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left) / 2;
         int height = (Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top) / 2;
-        Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5) + (width / 4), height + height - (height / 8));
+        Helper.CursorPosition.SetCursorPos((width / 2) + (width / 5) + (width / 3), height + height - (height / 8));
         Functions.CursorInteraction.CursorClick();
         Thread.Sleep(10);
         Functions.CursorInteraction.CursorClick();
@@ -26,7 +26,7 @@ public class Reyna
         Thread.Sleep(10);
         Functions.CursorInteraction.CursorClick();
 
-        speaker.Speak("Reyna has been locked");
+        speaker.Speak("Sage has been locked");
 
         LockAgent.ClearScreen.AgentLockedClear();
 
