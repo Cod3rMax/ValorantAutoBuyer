@@ -42,3 +42,12 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.Security.AccessContro
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.Security.Principal.Windows.dll
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\System.ValueTuple.dll
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\WindowsInput.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\dll\x86\OpenCvSharpExtern.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\dll\x86\opencv_videoio_ffmpeg455.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\dll\x64\OpenCvSharpExtern.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\dll\x64\opencv_videoio_ffmpeg455_64.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.Extensions.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.WpfExtensions.dll
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.xml
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.Extensions.xml

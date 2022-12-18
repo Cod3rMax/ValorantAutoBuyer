@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using OpenCvSharp;
 
 namespace ValorantAutoBuyer
 {
@@ -7,7 +8,13 @@ namespace ValorantAutoBuyer
     {
         public static void Main(string[] args)
         {
-            Functions.CheckValorantGame.CheckGameOpenedThread.Start();
+
+            Mat ValorantImage = new Mat(@"C:\Users\User\Desktop\main.png");
+            Cv2.ImShow("ValorantImage", ValorantImage);
+            Cv2.WaitKey();
+            Cv2.DestroyAllWindows();
+
+            // Functions.CheckValorantGame.CheckGameOpenedThread.Start();
         }
         
     }
