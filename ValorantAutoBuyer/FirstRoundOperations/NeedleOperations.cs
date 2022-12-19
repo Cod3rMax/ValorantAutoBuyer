@@ -10,6 +10,12 @@ public class NeedleOperations
     {
         // Convert the needle image to gray
         Cv2.CvtColor(NeedleImage, FirstRoundOperations.ImageVariables.NeedleImageToGray, ColorConversionCodes.BGR2GRAY);
+        
+        // Blure the original valorant image
+        Cv2.GaussianBlur(FirstRoundOperations.ImageVariables.NeedleImageToGray, FirstRoundOperations.ImageVariables.NeedleImageBlurred, new OpenCvSharp.Size(3,3),1, 1, 0);
+
+        
+        
     }
     
     
