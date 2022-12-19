@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Display\Header.cs" />
+    <Compile Include="FirstRoundOperations\CheckFirstRound.cs" />
     <Compile Include="Functions\CheckUserInput.cs" />
     <Compile Include="Functions\CheckValorantGame.cs" />
     <Compile Include="Functions\CursorInteraction.cs" />
@@ -212,6 +213,7 @@
     <Compile Include="Helper\KeyboardState.cs" />
     <Compile Include="Helper\MouseMovment.cs" />
     <Compile Include="Helper\ShowDiscordToUser.cs" />
+    <Compile Include="Helper\ValorantScreenShot.cs" />
     <Compile Include="Helper\ValorantWindow.cs" />
     <Compile Include="LockAgent\Astra.cs" />
     <Compile Include="LockAgent\Breach.cs" />
@@ -262,7 +264,11 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="FirstRoundOperations\Needles\800needle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
