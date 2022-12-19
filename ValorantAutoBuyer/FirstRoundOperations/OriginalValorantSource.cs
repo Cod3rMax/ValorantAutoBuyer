@@ -6,10 +6,10 @@ public class OriginalValorantSource
 {
     public static void ImageOperationsOnOriginalImageSource(Mat OriginalImage)
     {
-        // Convert the original valorant images to gray
+        // Convert the original valorant image to gray
         Cv2.CvtColor(OriginalImage, FirstRoundOperations.ImageVariables.ValorantImageToGray, ColorConversionCodes.BGR2GRAY);
             
-        // Blure the original valorant images
+        // Blure the original valorant image
         Cv2.GaussianBlur(FirstRoundOperations.ImageVariables.ValorantImageToGray, FirstRoundOperations.ImageVariables.ValorantImageBlurred, new OpenCvSharp.Size(3,3),1, 1, 0);
             
         // Sharppen the original image

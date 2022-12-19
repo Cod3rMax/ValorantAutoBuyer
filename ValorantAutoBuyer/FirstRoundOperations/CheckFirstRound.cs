@@ -25,14 +25,13 @@ public class CheckFirstRound
             // Make the necessary operations on the original image
             FirstRoundOperations.OriginalValorantSource.ImageOperationsOnOriginalImageSource(FirstRoundOperations.ImageVariables.ValorantImage);
             
+            // Make Operations on the First Needle Image (800) money on the corner
+            FirstRoundOperations.NeedleOperations.NeedleProcessor(FirstRoundOperations.ImageVariables.NeedleImage1);
             
             
             
-            Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.MaskValorantImageBitOperationResult);
-
+            Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.NeedleImageToGray);
             Cv2.WaitKey(10);
-               
-               
             GC.Collect();
         }
         

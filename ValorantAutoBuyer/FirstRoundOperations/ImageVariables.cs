@@ -14,5 +14,15 @@ public class ImageVariables
     public static Mat MaskValorantImage = new Mat();
     public static Mat MaskValorantImageBitOperationResult = new Mat();
     
+    
     public static Mat NeedleImage1 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle.png"));
+    public static Mat NeedleImageToGray = new Mat();
+    
+    
+    
+    
+    
+    
+    
+    
 }

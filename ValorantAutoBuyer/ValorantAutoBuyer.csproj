@@ -203,6 +203,7 @@
     <Compile Include="Display\Header.cs" />
     <Compile Include="FirstRoundOperations\CheckFirstRound.cs" />
     <Compile Include="FirstRoundOperations\ImageVariables.cs" />
+    <Compile Include="FirstRoundOperations\NeedleOperations.cs" />
     <Compile Include="FirstRoundOperations\OriginalValorantSource.cs" />
     <Compile Include="Functions\CheckUserInput.cs" />
     <Compile Include="Functions\CheckValorantGame.cs" />
