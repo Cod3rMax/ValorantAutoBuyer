@@ -17,6 +17,12 @@ public class NeedleOperations
         // Sharppen the needle image
         Cv2.Laplacian(FirstRoundOperations.ImageVariables.NeedleImageBlurred, FirstRoundOperations.ImageVariables.NeedleImageSharppened, MatType.CV_8UC1, 3);
         
+        // Convert the needle image to HSV
+        Cv2.CvtColor(NeedleImage, FirstRoundOperations.ImageVariables.HsvNeedleImage, ColorConversionCodes.BGR2HSV);
+        
+        
+        
+
         
     }
     

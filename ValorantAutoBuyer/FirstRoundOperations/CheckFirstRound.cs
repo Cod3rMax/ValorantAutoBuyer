@@ -30,7 +30,7 @@ public class CheckFirstRound
             
             
             
-            Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.NeedleImageSharppened);
+            Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.HsvNeedleImage);
             Cv2.WaitKey(10);
             GC.Collect();
         }
