@@ -4,7 +4,7 @@ namespace ValorantAutoBuyer.FirstRoundOperations;
 
 public class OriginalValorantSource
 {
-    public static void ImageOperationsOnOriginalImageSource(Mat OriginalImage)
+    public static Mat ImageOperationsOnOriginalImageSource(Mat OriginalImage)
     {
         // Convert the original valorant image to gray
         Cv2.CvtColor(OriginalImage, FirstRoundOperations.ImageVariables.ValorantImageToGray, ColorConversionCodes.BGR2GRAY);
@@ -24,5 +24,7 @@ public class OriginalValorantSource
         // Make the operation to see the colors in real shape
         Cv2.BitwiseAnd(FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.MaskValorantImageBitOperationResult, FirstRoundOperations.ImageVariables.MaskValorantImage);
 
+
+        return FirstRoundOperations.ImageVariables.MaskValorantImage;
     }
 }

@@ -1,5 +1,7 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Reflection;
+using System.Web.UI;
 using OpenCvSharp;
 
 namespace ValorantAutoBuyer.FirstRoundOperations;
@@ -16,13 +18,20 @@ public class ImageVariables
     
     
     public static Mat NeedleImage1 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle.png"));
+    public static Mat NeedleImage2 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle2.png"));
+    public static Mat NeedleImage3 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle3.png"));
     public static Mat NeedleImageToGray = new Mat();
     public static Mat NeedleImageBlurred = new Mat();
     public static Mat NeedleImageSharppened = new Mat();
     public static Mat HsvNeedleImage = new Mat();
     public static Mat MaskNeedleImage = new Mat();
     public static Mat MaskNeedleImageBitOperationResult = new Mat();
+
+    public static Mat MatchResultImage = new Mat();
+    
+    public static Double maxVal;
+    public static Point maxLoc;
     
     
-    
+
 }

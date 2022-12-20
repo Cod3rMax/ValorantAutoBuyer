@@ -52,3 +52,5 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.WpfExtensions.dl
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.xml
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.Extensions.xml
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800needle.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800Needle2.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800Needle3.png

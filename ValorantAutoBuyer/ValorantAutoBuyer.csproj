@@ -203,6 +203,7 @@
     <Compile Include="Display\Header.cs" />
     <Compile Include="FirstRoundOperations\CheckFirstRound.cs" />
     <Compile Include="FirstRoundOperations\ImageVariables.cs" />
+    <Compile Include="FirstRoundOperations\MatchTemplateToGetFirstRound.cs" />
     <Compile Include="FirstRoundOperations\NeedleOperations.cs" />
     <Compile Include="FirstRoundOperations\OriginalValorantSource.cs" />
     <Compile Include="Functions\CheckUserInput.cs" />
@@ -269,6 +270,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FirstRoundOperations\Needles\800needle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FirstRoundOperations\Needles\800Needle2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FirstRoundOperations\Needles\800Needle3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

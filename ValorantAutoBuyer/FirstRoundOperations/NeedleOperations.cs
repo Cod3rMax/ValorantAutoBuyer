@@ -6,7 +6,7 @@ public class NeedleOperations
 {
     
     
-    public static void NeedleProcessor(Mat NeedleImage)
+    public static Mat NeedleProcessor(Mat NeedleImage)
     {
         // Convert the needle image to gray
         Cv2.CvtColor(NeedleImage, FirstRoundOperations.ImageVariables.NeedleImageToGray, ColorConversionCodes.BGR2GRAY);
@@ -26,9 +26,8 @@ public class NeedleOperations
         // Make the operation to see the colors in real shape
         Cv2.BitwiseAnd(NeedleImage, NeedleImage, FirstRoundOperations.ImageVariables.MaskNeedleImageBitOperationResult, FirstRoundOperations.ImageVariables.MaskNeedleImage);
 
-        
+        return FirstRoundOperations.ImageVariables.MaskNeedleImage;
 
-        
     }
     
     
