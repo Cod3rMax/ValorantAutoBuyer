@@ -18,7 +18,7 @@ public class ImageVariables
     public static Mat NeedleImage1 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle.png"));
     public static Mat NeedleImageToGray = new Mat();
     public static Mat NeedleImageBlurred = new Mat();
-    
+    public static Mat NeedleImageSharppened = new Mat();
     
     
     

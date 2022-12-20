@@ -13,7 +13,9 @@ public class NeedleOperations
         
         // Blure the original valorant image
         Cv2.GaussianBlur(FirstRoundOperations.ImageVariables.NeedleImageToGray, FirstRoundOperations.ImageVariables.NeedleImageBlurred, new OpenCvSharp.Size(3,3),1, 1, 0);
-
+        
+        // Sharppen the needle image
+        Cv2.Laplacian(FirstRoundOperations.ImageVariables.NeedleImageBlurred, FirstRoundOperations.ImageVariables.NeedleImageSharppened, MatType.CV_8UC1, 3);
         
         
     }
