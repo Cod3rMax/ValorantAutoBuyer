@@ -20,8 +20,8 @@ public class ImageVariables
     public static Mat NeedleImageBlurred = new Mat();
     public static Mat NeedleImageSharppened = new Mat();
     public static Mat HsvNeedleImage = new Mat();
-    
-    
+    public static Mat MaskNeedleImage = new Mat();
+    public static Mat MaskNeedleImageBitOperationResult = new Mat();
     
     
     

@@ -20,7 +20,12 @@ public class NeedleOperations
         // Convert the needle image to HSV
         Cv2.CvtColor(NeedleImage, FirstRoundOperations.ImageVariables.HsvNeedleImage, ColorConversionCodes.BGR2HSV);
         
+        // Get the white color and mask everything else from needle
+        Cv2.InRange(FirstRoundOperations.ImageVariables.HsvNeedleImage, new Scalar(0,0,160), new Scalar(40,25,255), FirstRoundOperations.ImageVariables.MaskNeedleImage);
         
+        // Make the operation to see the colors in real shape
+        Cv2.BitwiseAnd(NeedleImage, NeedleImage, FirstRoundOperations.ImageVariables.MaskNeedleImageBitOperationResult, FirstRoundOperations.ImageVariables.MaskNeedleImage);
+
         
 
         
