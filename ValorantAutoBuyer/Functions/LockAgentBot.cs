@@ -3,6 +3,8 @@ using System.Drawing;
 using System.Speech.Synthesis;
 using System.Threading;
 using AutoItX3Lib;
+using OpenCvSharp;
+using OpenCvSharp.Extensions;
 using ValorantAutoBuyer.Globals;
 using ValorantAutoBuyer.Helper;
 using Console = Colorful.Console;
@@ -244,20 +246,45 @@ public class LockAgentBot
         var speech = new SpeechSynthesizer();
         speech.Volume = 100;
         AutoItX3 au3 = new AutoItX3();
+        int Counter = 1;
         while(true)
         {
 
             var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
-            
-            object SearchPixel1 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0x615552);
-            object SearchPixel2 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0x594C4C);
-            object SearchPixel3 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0x47474A);
-            object SearchPixel4 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0x6C5F57);
-            object SearchPixel5 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0xB08570);
-            object SearchPixel6 = au3.PixelSearch(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, Helper.ValorantWindow._rect.Right, Helper.ValorantWindow._rect.Buttom, 0x2B374C);
 
-            if (SearchPixel1.ToString() != "0" && SearchPixel2.ToString() != "0" && SearchPixel3.ToString() != "0" && SearchPixel4.ToString() != "0" && SearchPixel5.ToString() != "0" && SearchPixel6.ToString() != "0")
+
+            FirstRoundOperations.ImageVariables.ValorantImage = new Mat
+            (
+                new OpenCvSharp.Size(Helper.ValorantScreenShot.TakeValorantScreenShot().Width,
+                    Helper.ValorantScreenShot.TakeValorantScreenShot().Height), MatType.CV_8UC3
+            );
+
+                // Keep taking screenshots of the game
+                BitmapConverter.ToMat(Helper.ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage);
+                
+                // Convert the image to gray
+               
+            Cv2.CvtColor
+            (
+                FirstRoundOperations.ImageVariables.ValorantImage, 
+                FirstRoundOperations.ImageVariables.ValorantImageToGray,
+                ColorConversionCodes.BGR2GRAY
+            );
+                
+                
+
+                
+            FirstRoundOperations.MatchTemplateToGetFirstRound.GetPredictionMatchForFirstRound
+            (
+                FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.AutoLockAgentNeedle3
+            );
+                
+                
+
+            
+            
+            if (FirstRoundOperations.ImageVariables.maxVal > 0.92)
             {
 
 

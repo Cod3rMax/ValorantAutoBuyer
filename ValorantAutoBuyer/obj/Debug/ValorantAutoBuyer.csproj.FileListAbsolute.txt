@@ -63,3 +63,6 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf7.png
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf8.png
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf9.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\AutoLockAgentNeedle1.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\AutoLockAgentNeedle2.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\AutoLockAgentNeedle3.png

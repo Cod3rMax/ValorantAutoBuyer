@@ -278,6 +278,15 @@
     <Content Include="FirstRoundOperations\Needles\800Needle3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="FirstRoundOperations\Needles\AutoLockAgentNeedle1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FirstRoundOperations\Needles\AutoLockAgentNeedle2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FirstRoundOperations\Needles\AutoLockAgentNeedle3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="FirstRoundOperations\Needles\FirstRoundOfHalf1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
