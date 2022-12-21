@@ -184,7 +184,8 @@ public class CheckFirstRound
                 Console.WriteLine("First game started with FirstRoundOfHalf9");
             }
 
-            Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.ValorantImage);
+            // Cv2.ImShow("Original Source", FirstRoundOperations.ImageVariables.ValorantImage);
+            Thread.Sleep(150);
             Cv2.WaitKey(10);
             GC.Collect();
         }
