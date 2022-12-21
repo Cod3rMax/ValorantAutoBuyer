@@ -54,3 +54,12 @@ B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\OpenCvSharp.Extensions.xml
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800needle.png
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800Needle2.png
 B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\800Needle3.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf1.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf2.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf3.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf4.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf5.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf6.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf7.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf8.png
+B:\C#\ValorantAutoBuyer\ValorantAutoBuyer\bin\Debug\FirstRoundOperations\Needles\FirstRoundOfHalf9.png

@@ -20,6 +20,15 @@ public class ImageVariables
     public static Mat NeedleImage1 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle.png"));
     public static Mat NeedleImage2 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle2.png"));
     public static Mat NeedleImage3 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\800needle3.png"));
+    public static Mat FirstRoundOfHalf1 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf1.png"));
+    public static Mat FirstRoundOfHalf2 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf2.png"));
+    public static Mat FirstRoundOfHalf3 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf3.png"));
+    public static Mat FirstRoundOfHalf4 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf4.png"));
+    public static Mat FirstRoundOfHalf5 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf5.png"));
+    public static Mat FirstRoundOfHalf6 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf6.png"));
+    public static Mat FirstRoundOfHalf7 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf7.png"));
+    public static Mat FirstRoundOfHalf8 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf8.png"));
+    public static Mat FirstRoundOfHalf9 = Cv2.ImRead(Path.Combine (Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"FirstRoundOperations\Needles\FirstRoundOfHalf9.png"));
     public static Mat NeedleImageToGray = new Mat();
     public static Mat NeedleImageBlurred = new Mat();
     public static Mat NeedleImageSharppened = new Mat();
