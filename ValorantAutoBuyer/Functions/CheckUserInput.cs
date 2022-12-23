@@ -107,6 +107,8 @@ public class CheckUserInput
                 KeyboardInteraction.PressButtonB();
                 Thread.Sleep(20);
             }
+            
+            GC.Collect();
         }
     }
 }

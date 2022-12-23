@@ -8,7 +8,7 @@ namespace ValorantAutoBuyer.FirstRoundOperations;
 
 public class ImageVariables
 {
-    public static Mat ValorantImage = new Mat(new OpenCvSharp.Size(Helper.ValorantScreenShot.TakeValorantScreenShot().Width, Helper.ValorantScreenShot.TakeValorantScreenShot().Height), MatType.CV_8UC3);
+    public static Mat ValorantImage;
     public static Mat ValorantImageToGray = new Mat();
     public static Mat ValorantImageBlurred = new Mat();
     public static Mat ValorantImageSharppened = new Mat();

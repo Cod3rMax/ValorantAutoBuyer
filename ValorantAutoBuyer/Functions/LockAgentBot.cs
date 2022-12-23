@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Speech.Synthesis;
 using System.Threading;
 using AutoItX3Lib;
@@ -238,7 +239,8 @@ public class LockAgentBot
 
 
 
-
+    [DllImport("user32.dll")]
+    static extern IntPtr GetForegroundWindow();
 
 
 
@@ -253,28 +255,35 @@ public class LockAgentBot
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
 
 
-            FirstRoundOperations.ImageVariables.ValorantImage = new Mat
-            (
-                new OpenCvSharp.Size(Helper.ValorantScreenShot.TakeValorantScreenShot().Width,
-                    Helper.ValorantScreenShot.TakeValorantScreenShot().Height), MatType.CV_8UC3
-            );
 
-                // Keep taking screenshots of the game
-            
-            
-                    BitmapConverter.ToMat(ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage);
-                // try
-                // {
-                // }
-                // catch (Exception e)
-                // {
-                // Console.Clear();
-                // Console.WriteLine("[** Error **] => You need to restart ValorantAutoBuyer!.", Color.Red);
-                // }
+
+                // Keep taking screenshots of the game if the game is not minimized
+
+                if(GetForegroundWindow() == ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ")){
+                    
+                    
+                    FirstRoundOperations.ImageVariables.ValorantImage = new Mat
+                    (
+                        new OpenCvSharp.Size(Helper.ValorantScreenShot.TakeValorantScreenShot().Width,
+                            Helper.ValorantScreenShot.TakeValorantScreenShot().Height), MatType.CV_8UC3
+                    );
+                    
+                    
+                    System.Console.WriteLine("taking screenshots");
+                    try 
+                    {
+                        BitmapConverter.ToMat(ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage); 
+                    }
+                    catch (Exception e) 
+                    { 
+                        Console.Clear();
+                        System.Console.WriteLine(e.ToString());
+                        Console.WriteLine("[** Error **] => You need to restart ValorantAutoBuyer!.", Color.Red); 
+                    }
+               
                 
                 // Convert the image to gray
-               
-            Cv2.CvtColor
+                Cv2.CvtColor
             (
                 FirstRoundOperations.ImageVariables.ValorantImage, 
                 FirstRoundOperations.ImageVariables.ValorantImageToGray,
@@ -286,13 +295,13 @@ public class LockAgentBot
                 
             FirstRoundOperations.MatchTemplateToGetFirstRound.GetPredictionMatchForFirstRound
             (
-                FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.AutoLockAgentNeedle3
+                FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.AutoLockAgentNeedle2
             );
-                
-                
 
-            
-            
+
+
+
+            System.Console.WriteLine(FirstRoundOperations.ImageVariables.maxVal);
             if (FirstRoundOperations.ImageVariables.maxVal > 0.92)
             {
 
@@ -388,6 +397,11 @@ public class LockAgentBot
                 Globals.Config.AutoLockAgent = false;
                 break;
             }
+            
+            
+                }
+                
+                
             GC.Collect();
         }
 
