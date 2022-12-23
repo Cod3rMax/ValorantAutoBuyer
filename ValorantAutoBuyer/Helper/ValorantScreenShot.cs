@@ -12,7 +12,6 @@ public class ValorantScreenShot
         {
             graphics.CopyFromScreen(Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Top, 0,0, new System.Drawing.Size(Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left, Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top));
         }
-        GC.Collect();
         return bitmap;
     }
 }

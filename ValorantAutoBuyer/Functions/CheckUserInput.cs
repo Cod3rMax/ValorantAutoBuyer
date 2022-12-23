@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
-using AutoItX3Lib;
+using Console = Colorful.Console;
 
 namespace ValorantAutoBuyer.Functions;
 
@@ -16,10 +18,24 @@ public class CheckUserInput
         var threadCounter = 0;
         while (true)
         {
+            
+            // If valorant is closed this program also close
+            Process[] proc = Process.GetProcessesByName("Valorant");
+            if (proc.Length == 0)
+            {
+                Console.Clear();
+                Console.WriteLine("[** Error **] => Valorant Closed, Good Bye!.", Color.Red);
+                Thread.Sleep(3000);
+                Environment.Exit(1);
+            }
+            
+            
             // Keep getting valorant window sizes everytime.
             var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
 
+            
+            
             if (Globals.Config.AutoLockAgent && threadCounter == 0)
             {
                 new Thread(() => Functions.LockAgentBot.StartLockAgentProcess()) { IsBackground = true }.Start();

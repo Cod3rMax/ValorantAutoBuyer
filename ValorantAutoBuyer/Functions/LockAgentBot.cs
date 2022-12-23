@@ -5,6 +5,7 @@ using System.Threading;
 using AutoItX3Lib;
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
+using ValorantAutoBuyer.FirstRoundOperations;
 using ValorantAutoBuyer.Globals;
 using ValorantAutoBuyer.Helper;
 using Console = Colorful.Console;
@@ -245,8 +246,6 @@ public class LockAgentBot
     {
         var speech = new SpeechSynthesizer();
         speech.Volume = 100;
-        AutoItX3 au3 = new AutoItX3();
-        int Counter = 1;
         while(true)
         {
 
@@ -261,7 +260,17 @@ public class LockAgentBot
             );
 
                 // Keep taking screenshots of the game
-                BitmapConverter.ToMat(Helper.ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage);
+            
+            
+                    BitmapConverter.ToMat(ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage);
+                // try
+                // {
+                // }
+                // catch (Exception e)
+                // {
+                // Console.Clear();
+                // Console.WriteLine("[** Error **] => You need to restart ValorantAutoBuyer!.", Color.Red);
+                // }
                 
                 // Convert the image to gray
                
