@@ -255,9 +255,8 @@ public class LockAgentBot
             
                 // Keep taking screenshots of the game if the game is not minimized
 
-                if(GetForegroundWindow() == ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ") && ValorantWindow._rect.Right - ValorantWindow._rect.Left != 0 && ValorantWindow._rect.Buttom - ValorantWindow._rect.Top != 0){
+                if(ValorantWindow._rect.Right - ValorantWindow._rect.Left != 0 && ValorantWindow._rect.Buttom - ValorantWindow._rect.Top != 0){
 
-                    System.Console.WriteLine("taking screenshots");
                     try 
                     {
                         
@@ -270,7 +269,6 @@ public class LockAgentBot
                     }
                     catch (Exception e) 
                     { 
-                        System.Console.WriteLine(ValorantScreenShot.TakeValorantScreenShot());
                         Console.WriteLine("[** Error **] => You need to restart ValorantAutoBuyer!.", Color.Red);
                     }
                
@@ -291,10 +289,7 @@ public class LockAgentBot
                 FirstRoundOperations.ImageVariables.ValorantImage, FirstRoundOperations.ImageVariables.AutoLockAgentNeedle3
             );
 
-
-
-
-            System.Console.WriteLine(FirstRoundOperations.ImageVariables.maxVal);
+            
             if (FirstRoundOperations.ImageVariables.maxVal > 0.70)
             {
 
