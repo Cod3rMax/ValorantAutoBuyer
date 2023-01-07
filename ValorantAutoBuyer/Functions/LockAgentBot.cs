@@ -39,7 +39,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         else if (UserAgentToLock.ToString().ToLower() == "breach")
                         {
@@ -47,7 +46,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "brimstone")
@@ -56,7 +54,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "chamber")
@@ -65,7 +62,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                     
                         else if (UserAgentToLock.ToString().ToLower() == "cypher")
@@ -74,7 +70,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "fade")
@@ -83,7 +78,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "harbor")
@@ -92,7 +86,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "jett")
@@ -101,7 +94,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
 
                         else if (UserAgentToLock.ToString().ToLower() == "kayo")
@@ -110,7 +102,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "killjoy")
@@ -119,7 +110,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "neon")
@@ -128,7 +118,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "omen")
@@ -137,7 +126,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "phoenix")
@@ -146,7 +134,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "raze")
@@ -155,7 +142,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "reyna")
@@ -164,7 +150,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "sage")
@@ -173,7 +158,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "skye")
@@ -182,7 +166,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "sova")
@@ -191,7 +174,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "viper")
@@ -200,7 +182,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else if (UserAgentToLock.ToString().ToLower() == "yoru")
@@ -209,7 +190,6 @@ public class LockAgentBot
                             Globals.Config.CorrectUserAgentEntered = true;
                             Config.AutoLockAgent = true;
                             Globals.Config.AgentLockingProcessON = false;
-                            Console.Clear();
                         }
                         
                         else
@@ -226,7 +206,6 @@ public class LockAgentBot
                 default:
                     Config.AutoLockAgent = false;
                     Globals.Config.AgentLockingProcessON = false;
-                    Console.Clear();
                     break;
             }
 

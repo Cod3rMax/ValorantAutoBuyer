@@ -6,6 +6,7 @@ using System.Threading;
 using OpenCvSharp;
 using OpenCvSharp.Extensions;
 using ValorantAutoBuyer.Functions;
+using ValorantAutoBuyer.Helper;
 
 namespace ValorantAutoBuyer.FirstRoundOperations;
 
@@ -16,12 +17,7 @@ public class CheckFirstRound
     
     public static void CheckIfFirstRound()
     {
-        var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
-        Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
 
-        
-        
-        
         // Ask the user here if he wants to purchase all abilities on the first round.
         Colorful.Console.Write("[*] => Would you like to purchase all abilities on first round? (Y/N): ", Color.Orange);
         var FirstRoundUserAnswer = Colorful.Console.ReadLine();
@@ -30,19 +26,51 @@ public class CheckFirstRound
         {
             case var _ when FirstRoundUserAnswer.ToString().ToLower() == "y" || FirstRoundUserAnswer.ToString().ToLower() == "yes":
                 Globals.Config.CheckFirstRound = true;
-                while (Globals.Config.CheckFirstRound)
+                Console.Clear();
+                break;
+            
+
+            default:
+                Globals.Config.CheckFirstRound = false;
+                Console.Clear();
+                break;
+        }
+
+    }
+
+
+
+    public static void startProcessFirstRound()
+    {
+        while (Globals.Config.CheckFirstRound)
                 {
-                    FirstRoundOperations.ImageVariables.ValorantImage = new Mat
-                    (
-                        new OpenCvSharp.Size(Helper.ValorantScreenShot.TakeValorantScreenShot().Width,
-                            Helper.ValorantScreenShot.TakeValorantScreenShot().Height), MatType.CV_8UC3
-                    );
+                    
+                    var hWind = Helper.ValorantWindow.FindWindow(IntPtr.Zero, "VALORANT  ");
+                    Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
+                    
+                    
+                    
+                    
+                    
 
                     while (true)
                     {
                         // Keep taking screenshots of the game
-                        BitmapConverter.ToMat(Helper.ValorantScreenShot.TakeValorantScreenShot(), FirstRoundOperations.ImageVariables.ValorantImage);
-
+                        try
+                        {
+                            
+                            FirstRoundOperations.ImageVariables.ValorantImage = new Mat
+                            (
+                                new OpenCvSharp.Size(Helper.ValorantWindow._rect.Right - Helper.ValorantWindow._rect.Left, 
+                                    Helper.ValorantWindow._rect.Buttom - Helper.ValorantWindow._rect.Top), MatType.CV_8UC3
+                            );
+                            
+                            BitmapConverter.ToMat(ValorantScreenShot.TakeValorantScreenShot(), ImageVariables.ValorantImage);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("[** Error **] => First Round cannot be detected, Restart the program!.", Color.Red);
+                        }
 
                         // Get the match test
                         FirstRoundOperations.MatchTemplateToGetFirstRound.GetPredictionMatchForFirstRound
@@ -53,9 +81,11 @@ public class CheckFirstRound
                         );
 
 
+                        
+                        
+                        
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.82)
                         {
-                            Console.WriteLine("First game started with first needle");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -77,7 +107,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.84)
                         {
-                            Console.WriteLine("First game started with second needle");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -100,7 +129,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.84)
                         {
-                            Console.WriteLine("First game started with third needle");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -125,7 +153,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf1");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -148,7 +175,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf2");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -171,7 +197,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf3");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -194,7 +219,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf4");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -217,7 +241,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf5");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -240,7 +263,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf6");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -263,7 +285,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf7");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -285,7 +306,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf8");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -308,7 +328,6 @@ public class CheckFirstRound
 
                         if (FirstRoundOperations.ImageVariables.maxVal > 0.85)
                         {
-                            Console.WriteLine("First game started with FirstRoundOfHalf9");
                             Console.Beep(1000, SoundDuration);
                             Console.Beep(1000, SoundDuration);
                             KeyboardInteraction.PressButtonB();
@@ -327,21 +346,10 @@ public class CheckFirstRound
         }
 
                 }
-                break;
-            
-
-            default:
-                Globals.Config.CheckFirstRound = false;
-                Console.Clear();
-                break;
-        }
-        
-        
-        
-        
-
-        
-        
-        
     }
+    
+    
+    
+    
+    
 }

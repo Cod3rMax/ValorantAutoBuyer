@@ -16,6 +16,7 @@ public class CheckUserInput
         Helper.ShowDiscordToUser.DisplayDiscordServer();
 
         var threadCounter = 0;
+        var detectFirstRound = 0;
         while (true)
         {
             
@@ -35,12 +36,21 @@ public class CheckUserInput
             Helper.ValorantWindow.GetWindowRect(hWind, out Helper.ValorantWindow._rect);
 
             
-            
+            // Send thread to auto lock agent
             if (Globals.Config.AutoLockAgent && threadCounter == 0)
             {
                 new Thread(() => Functions.LockAgentBot.StartLockAgentProcess()) { IsBackground = true }.Start();
                 threadCounter += 1;
             }
+            
+            
+            // Send thread to detect first round only if auto lock agent is false
+            if (Globals.Config.CheckFirstRound && detectFirstRound == 0 && !Globals.Config.AutoLockAgent)
+            {
+                new Thread(() => FirstRoundOperations.CheckFirstRound.startProcessFirstRound()) { IsBackground = true }.Start();
+                detectFirstRound += 1;
+            }
+            
             
             // For the first round (I need abilities only)
             if (Helper.KeyboardState.GetAsyncKeyState(Keys.F1) < 0)

@@ -29,6 +29,7 @@ public class CheckValorantGame
             {
                 Console.Clear();
                 LockAgentBot.LockAgentSniper();
+                FirstRoundOperations.CheckFirstRound.CheckIfFirstRound();
                 Display.Header.ValorantAutoBuyerHeader();
                 Display.Header.ValorantAutoBuyerOptions();
                 Functions.CheckUserInput.StartAutoBuyer();

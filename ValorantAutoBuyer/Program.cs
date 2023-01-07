@@ -19,8 +19,7 @@ namespace ValorantAutoBuyer
         
         public static void Main(string[] args)
         {
-            FirstRoundOperations.CheckFirstRound.CheckIfFirstRound();
-            // Functions.CheckValorantGame.CheckGameOpenedThread.Start();
+            Functions.CheckValorantGame.CheckGameOpenedThread.Start();
         }
         
     }
